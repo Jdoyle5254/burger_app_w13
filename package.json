@@ -1,0 +1,26 @@
+{
+  "name": "burger_app_w13",
+  "version": "1.0.0",
+  "description": "an app to name and devour a burger",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jdoyle5254/burger_app_w13.git"
+  },
+  "author": "JenDoyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jdoyle5254/burger_app_w13/issues"
+  },
+  "homepage": "https://github.com/Jdoyle5254/burger_app_w13#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6"
+  }
+}
