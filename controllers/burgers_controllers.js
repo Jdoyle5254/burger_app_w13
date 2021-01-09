@@ -20,6 +20,7 @@ app.get("/", function(req, res) {
       req.body.name 
     ], function(result) {
       // Send back the ID of the new quote
+      console.log("new name burger:", burger);
       res.json({ id: result.insertId });
     });
   });

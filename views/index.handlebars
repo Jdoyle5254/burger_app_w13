@@ -3,21 +3,37 @@
 <h2>Uneaten Burgers!</h2>
 
 <ul>
-  {{#each burgers}}
+    {{!-- here we are displaying all burgers where devoured is false using #unless--}}
+    
+    {{#each burgers}}
     {{#unless devoured}}
-      {{this.burger}}
+    <li>
+        <p>
+            {{this.burger_name}}
+              <button devouredBurger="{{this.id}}" class="devourburger">Devour Me!</button>
+        </p>
+    </li>
     {{/unless}}
-  {{/each}}
+    {{/each}}
+  
+ 
 </ul>
 
 <h2>Devoured Burgers!</h2>
 
 <ul>
-  {{#each burgers}}
+{{!-- here we are displaying all burgers where devoured is true using the #if--}}    
+    {{#each burgers}}
     {{#if devoured}}
-      {{this.burger}}
+    <li>
+        <p>
+            {{this.burger_name}}
+        </p>
+    </li>
     {{/if}}
   {{/each}}
+  
+ 
 </ul>
 
 <h2>Create your burger!</h2>
