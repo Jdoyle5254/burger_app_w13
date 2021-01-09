@@ -27,7 +27,9 @@ To access from a browser:   https://devour-da-burger-app.herokuapp.com/
 
 
 ## Credits
-I had a lot of help with this project.  Of Course TA's and instructional team, and tutors.  
+I had a lot of help with this project.  Of Course TA's and instructional team, and tutors.  TA Pat was very insightful, especially with the Heroku Deploy part of the homework.  My teammeates offered much insight into this project and much support, as it was a tough assignment.    
+
+I referred to  Activity 17 Cat's app from week 13 as a resource in functionality and routes.  
 
 ## Questions
 For more information on this project, here is a link to GitHub:
