@@ -7,10 +7,10 @@
     
     {{#each burgers}}
     {{#unless devoured}}
-    <li>
+    <li
         <p>
             {{this.burger_name}}
-              <button devouredBurger="{{this.id}}" class="devourburger">Devour Me!</button>
+              <button id="{{this.id}}" class="devourburger">Devour Me!</button>
         </p>
     </li>
     {{/unless}}
@@ -37,7 +37,7 @@
 </ul>
 
 <h2>Create your burger!</h2>
-<form class="create-form">
+<form >
 
   <div class="form-group">
     <label for="newBurger">Burger Name:</label>
@@ -50,5 +50,5 @@
     <input type="radio" name="sleepy" value="0"> Awake
   </div> --}}
 
-  <button type="submit">Add Burger </button>
+  <button class="create-burger" type="submit">Add Burger </button>
 </form>

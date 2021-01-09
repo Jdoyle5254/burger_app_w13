@@ -14,12 +14,8 @@ app.get("/", function(req, res) {
   });
   
   app.post("/api/burgers", function(req, res) {
-    burger.inserOne([
-      "name"
-    ], [
-      req.body.name 
-    ], function(result) {
-      // Send back the ID of the new quote
+    burger.insertOne(req.body.name, function(result) {
+      // Send back the ID of the new burger
       console.log("new name burger:", burger);
       res.json({ id: result.insertId });
     });
