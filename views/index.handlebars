@@ -1,54 +1,58 @@
-<h1>Eat Da Burger</h1>
+<h1 class="header">Eat Da Burger</h1>
 
-<h2>Uneaten Burgers!</h2>
+<div class="daburger">
+  <img src="/assets/img/niklas-rhose-FlmXvqlD-nI-unsplash.jpg" alt= "burger" class="burgerimage" width="1000" height="300"/>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h2>Uneaten Burgers!</h2>
+    <ul class="uneaten" >
+      {{!-- here we are displaying all burgers where devoured is false using #unless--}}
 
-<ul>
-    {{!-- here we are displaying all burgers where devoured is false using #unless--}}
-    
-    {{#each burgers}}
-    {{#unless devoured}}
-    <li
-        <p>
-            {{this.burger_name}}
-              <button id="{{this.id}}" class="devourburger">Devour Me!</button>
+      {{#each burgers}}
+      {{#unless devoured}}
+      <li <p>
+        {{this.burger_name}}
+        <button id="{{this.id}}" class="devourburger">Devour Me!</button>
         </p>
-    </li>
-    {{/unless}}
-    {{/each}}
-  
- 
-</ul>
+      </li>
+      {{/unless}}
+      {{/each}}
 
-<h2>Devoured Burgers!</h2>
 
-<ul>
-{{!-- here we are displaying all burgers where devoured is true using the #if--}}    
-    {{#each burgers}}
-    {{#if devoured}}
-    <li>
+    </ul>
+    </col>
+  </div>
+
+  <div class="col-md-6">
+    <h2>Devoured Burgers!</h2>
+
+    <ul class="devoured">
+      {{!-- here we are displaying all burgers where devoured is true using the #if--}}
+      {{#each burgers}}
+      {{#if devoured}}
+      <li>
         <p>
-            {{this.burger_name}}
+          {{this.burger_name}}
         </p>
-    </li>
-    {{/if}}
-  {{/each}}
-  
- 
-</ul>
+      </li>
+      {{/if}}
+      {{/each}}
 
-<h2>Create your burger!</h2>
-<form >
+
+    </ul>
+  </div>
+</div>
+
+<div class="createburger">
+<h2 class="create">Create your burger!</h2>
+<form>
 
   <div class="form-group">
     <label for="newBurger">Burger Name:</label>
     <input type="text" id="newBurger" name="name">
   </div>
-
-  {{!-- <div class="form-group">
-    <label for="devoured">Sleepy</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div> --}}
-
+  <br>
   <button class="create-burger" type="submit">Add Burger </button>
 </form>
+</div>

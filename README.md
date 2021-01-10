@@ -22,7 +22,22 @@ create package.json using `npm init`.  The dependencies for this program ar
 To access from a browser:   https://devour-da-burger-app.herokuapp.com/
 
 ## Usage 
+When the user navigates to the page they will be presented with 2 columns of data.
+ The initial set up of the page before CSS.   
  
+ 
+ It would be much better with some CSS:
+
+
+ The user can add a new burger to the list: 
+
+
+
+ Once the User Clicks submit the burger will appear in the Uneaten List:
+
+
+ When the user Clicks the "Devour Me" button the burger will move to the Devoured List: 
+
 
 
 
@@ -30,6 +45,8 @@ To access from a browser:   https://devour-da-burger-app.herokuapp.com/
 I had a lot of help with this project.  Of Course TA's and instructional team, and tutors.  TA Pat was very insightful, especially with the Heroku Deploy part of the homework.  My teammeates offered much insight into this project and much support, as it was a tough assignment.    
 
 I referred to  Activity 17 Cat's app from week 13 as a resource in functionality and routes.  
+
+Also W3 Schools and StackOverflow for useful tips and reminders on HTML and CSS. 
 
 ## Questions
 For more information on this project, here is a link to GitHub:
